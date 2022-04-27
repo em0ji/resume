@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="resume, python, django, flask, html, css, javascript, linux">
     <meta name="description" name="Это сайт - резюме Владимира Крейнерта">
+    <!--    Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
     <title>Резюме Владимира Крейнерта</title>
 </head>
 <body>
-    <img src="my_avatar.jpg" alt="Владимир Крейнерт">
-    <h1>Владимир Крейнерт</h1>
-    <p>Я являюсь основателем сообщества <strong>"Хактивисты всея Руси"</strong> на <strong>Яндекс Кью</strong>, а также телеграм-каналов <strong>"Хактивисты всея Руси"</strong> и <strong>"Breaking Emoji"</strong>.
-    <p>Самостоятельно изучаю <em>Python, web-фреймворки: Django, Flask, Tornado, FastAPI, AIOHTTP</em>, также интересуюсь <em>HTML, CSS, JavaScript, Linux</em> и другими технологиями. Имею незаконченное высшее образование по специальности <em>Прикладная информатика</em>.</p>
-    <h4>Список социальных сетей</h4>
+<header>
     <a href="https://tenchat.ru/vovarium?utm_source=997093de-58a0-44f8-8cfd-a8deb37e7b59" target="_blank">TenChat</a>
     |
     <a href="https://instagram.com/vovarium" target="_blank">Instagram</a>
@@ -22,6 +20,23 @@
     <a href="https://t.me/breakingemoji" target="_blank">Telegram</a>
     |
     <a href="https://twitter.com/breaking_emoji" target="_blank">Twitter</a>
+</header>
+<nav id="nav">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+    </ul>
+</nav>
+<section>
+    <article id="block1" class="card">
+        <img src="my_avatar.jpg" alt="Владимир Крейнерт">
+        <h1>Владимир Крейнерт</h1>
+        <p>Я являюсь основателем сообщества <strong>"Хактивисты всея Руси"</strong> на <strong>Яндекс Кью</strong>, а также телеграм-каналов <strong>"Хактивисты всея Руси"</strong> и <strong>"Breaking Emoji"</strong>.
+    </article>
+    <article id="block2" class="card">
+        <p>Самостоятельно изучаю <em>Python, web-фреймворки: Django, Flask, Tornado, FastAPI, AIOHTTP</em>, также интересуюсь <em>HTML, CSS, JavaScript, Linux</em> и другими технологиями. Имею незаконченное высшее образование по специальности <em>Прикладная информатика</em>.</p>
+    </article>
     <h2>Мои хобби</h2>
     <ul>
         <li>Программирование</li>
@@ -29,7 +44,7 @@
         <li>Футбол</li>
     </ul>
     <h2>Опыт работы | Стаж 15 лет 8 месяцев</h2>
-    <table border="1">
+    <table>
         <thead>
         <tr>
             <th>Название компании</th>
@@ -116,7 +131,9 @@
         </tr>
         </tbody>
     </table>
-    <h1>Form | Формы</h1>
+</section>
+<div id="form" class="form">
+    <h1>Связаться</h1>
     <form action="">
         <div>
             <label for="name">Ваше имя</label>
@@ -125,21 +142,6 @@
         <div>
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="password">Пароль</label>
-            <input type="password" id="password" placeholder="Введите password">
-        </div>
-        <div>
-            <label for="tel">Телефон</label>
-            <input type="tel" id="tel" min="0" placeholder="Введите номер">
-        </div>
-        <div>
-            <label>Языки программирования</label>
-            <input type="checkbox" name="code"> Python
-            <input type="checkbox" name="code"> JavaScript
-            <input type="checkbox" name="code"> C++
-            <input type="checkbox" name="code"> C#
         </div>
         <div>
             <label for="sex">Ваш пол</label>
@@ -156,7 +158,7 @@
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
         </div>
         <input type="submit" value="Отправить!">
-<!--        <button type="submit">Отправить</button>-->
     </form>
+</div>
 </body>
 </html>
