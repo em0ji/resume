@@ -4,12 +4,33 @@ body {
     font-family: Iosevka, 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: normal;
+    color: #0f141e;
+    background: #ffffff;
 }
 
 .info-text p {
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
+    color: #86898f;
+}
+
+.card {
+    border: 2px solid #F8F8FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-lavender {
+    background: #E6E6FA;
+}
+
+.bg-ivory {
+    background: #FFFFF0;
+}
+
+.bg-linen {
+    background: #FAF0E6;
 }
 
 table {
