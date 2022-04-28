@@ -8,6 +8,24 @@ body {
     background: #ffffff;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
+
+a:active {
+    color: #0000FF;
+}
+
+a:visited {
+    color: #9400D3;
+}
+
 .container {
     max-width: 750px;
     margin: auto;
@@ -69,4 +87,18 @@ table {
 }
 th, td {
     border: 1px solid grey;
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
